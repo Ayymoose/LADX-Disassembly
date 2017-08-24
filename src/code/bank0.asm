@@ -38,7 +38,7 @@ Init::
     ld   [rBGP], a  ; | Clear registers
     ld   [rOBP0], a ; |
     ld   [rOBP1], a ; /
-    ld   hl, $8000
+    ld   hl, vRAM
     ld   bc, $1800
     call ZeroMemory ; Clear bytes at hl
     ld   a, $24
