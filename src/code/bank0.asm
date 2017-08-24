@@ -1296,7 +1296,7 @@ label_91D::
 label_92F::
     ld   a, $1A
     ld   [SelectRomBank_2100], a
-    call label_6576
+    call label_6576 ; Function that performs screen transitioning
     ld   a, [$FFDF]
     ld   [SelectRomBank_2100], a
     ld   hl, $DC91
