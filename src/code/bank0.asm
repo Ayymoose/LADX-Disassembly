@@ -39,7 +39,7 @@ Init::
     ld   [rOBP0], a ; |
     ld   [rOBP1], a ; /
     ld   hl, gRAM
-    ld   bc, $1800
+    ld   bc, 6KB
     call ZeroMemory ; Clear bytes at hl
     ld   a, $24
     ld   [SelectRomBank_2100], a
