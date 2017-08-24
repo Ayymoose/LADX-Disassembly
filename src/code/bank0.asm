@@ -6787,7 +6787,7 @@ label_2BCF::
     ld   a, $0C
     call SwitchAdjustedBank
     ld   hl, $4000
-    ld   de, $8000
+    ld   de, gRAM
     ld   bc, $0400
     call CopyData
     ld   a, $0C
