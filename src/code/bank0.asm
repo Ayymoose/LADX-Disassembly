@@ -6990,7 +6990,7 @@ label_2D50::
     ld   a, $10
     call SwitchAdjustedBank
     ld   hl, $5400
-    ld   de, $8000
+    ld   de, gRAM
     ld   bc, $0600
     call CopyData
     ld   hl, $4000
