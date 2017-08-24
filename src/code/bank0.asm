@@ -49,8 +49,8 @@ Init::
     ld   a, $01
     ld   [SelectRomBank_2100], a
     call label_6D32
-    call label_FFC0
-    call label_410D
+    call label_FFC0 ; H/W function
+    call label_410D ; H/W function
     call label_2BCF
     ld   a, $44
     ld   [rSTAT], a
