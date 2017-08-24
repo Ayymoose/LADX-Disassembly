@@ -6637,7 +6637,7 @@ label_2A66::
     call AdjustBankNumberForGBC
     ld   [SelectRomBank_2100], a
     ld   hl, $4000
-    ld   de, $8000
+    ld   de, gRAM
     ld   bc, $1800
     call CopyData
     ld   a, $0C
@@ -6651,7 +6651,7 @@ label_2A66::
     call AdjustBankNumberForGBC
     ld   [SelectRomBank_2100], a
     ld   hl, $7500
-    ld   de, $8000
+    ld   de, gRAM
     ld   bc, $0040
     call CopyData
     ld   de, $8D00
@@ -6669,7 +6669,7 @@ label_2A66::
     call AdjustBankNumberForGBC
     ld   [SelectRomBank_2100], a
     ld   hl, $6000
-    ld   de, $8000
+    ld   de, gRAM
     ld   bc, $0800
     call CopyData
     ld   a, $0F
